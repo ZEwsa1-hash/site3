@@ -1,0 +1,79 @@
+.section5{
+    margin: 160px auto;
+    max-width: 645px;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    max-width: 645px;
+   & h1{
+    margin-top: 10px;
+    font-size: 48px;
+    line-height: 32px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    color: var(--text-one-color);
+   }
+   & p{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    color: var(--text-one-color);
+   }
+   & button{
+    margin-top: 30px;
+    font-size: 24px;
+    line-height:20px;
+    font-weight: 600;
+    letter-spacing: 0%;
+    color: var(--text-two-color);
+    background-color: var(--background-one-color);
+    border: none;
+    width: 204px;
+    height: 70px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+   }
+   & button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+   }
+   & button:active{
+    transform: translateY(2px) scale(0.98);
+    box-shadow: inset 0 4px 10px rgba(0,0,0,0.25);
+   }
+}
+@media(max-width:320px){
+    .section5{
+        margin: 80px auto 60px;
+        padding: 0 20px;
+        max-width: 320px;
+    }
+    .section5 img{
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+    .section5 h1{
+        font-size: 28px;
+        line-height: 36px;
+        margin-top: 20px;
+    }
+    .section5 p{
+        font-size: 14px;
+        line-height: 24px;
+        max-width: 280px;
+        margin: 16px auto 0;
+        display: block;
+    }
+    .section5 button{
+        width: 160px;
+        height: 48px;
+        font-size: 16px;
+        margin-top: 24px;
+    }
+}

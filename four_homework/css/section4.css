@@ -1,0 +1,130 @@
+.section4{
+    padding-top: 59px;
+    padding-bottom: 59px;
+    background-color: #f4f5f7;
+}
+.section4__block1{
+    margin: 0 auto;
+    max-width: 1110px;
+    text-align: center;
+        & h1{
+        font-size: 48px;
+        line-height: 64px;
+        font-weight: 800;
+        letter-spacing: 0%;
+        color: var(--text-one-color);
+    }
+    & p{
+        margin-top: 5px;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 400;
+        letter-spacing: 0%;
+        color: var(--text-one-color);
+    } 
+}
+.section4__block2{
+    margin: 48px auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr  1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    ". . A . ."
+    ". B A C ."
+    "D B E C F"
+    "D G E I F"
+    ". G H I ."
+    ". . H . .";
+    max-width: 946px;
+    gap: 24px;
+}
+.box{
+    border-radius: 16px;
+    width: 170px;
+    height: 96px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.a{
+    grid-area: A;
+}
+.b{
+    grid-area: B;
+}
+.c{
+    grid-area: C;
+}.d{
+    grid-area: D;
+}.e{
+    grid-area: E;
+}.f{
+    grid-area: F;
+}
+.g{
+    grid-area: G;
+}.i{
+    grid-area: I;
+}
+.h{
+    grid-area: H;
+}
+@media(max-width:1024px){
+    .section4__block1{
+        margin: 0 auto;
+        max-width: 693px;
+        text-align: center;
+    }
+    .section4__block2{
+        padding: 0 38.5px;
+    }
+}
+@media(max-width:320px){
+    .section4{
+        padding: 40px 21px;
+    }
+    .section4__block1{
+        max-width: 100%;
+        padding: 0 auto;
+        text-align: center;
+        & h1{
+            font-size: 32px;
+            line-height: 40px;
+            max-width: 260px;
+            margin: 0 auto;
+        }
+        & p{
+            margin: 16px auto 0;
+            font-size: 14px;
+            line-height: 24px;
+            max-width: 280px;
+        }
+    }
+    .section4__block2{
+        margin: 40px auto 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .section4__block2 .box{
+        width: 100%;
+        max-width: 260px;
+        height: 96px;
+        border-radius: 16px;
+        margin: 0 auto;
+    }
+    .section4__block2 .box:nth-child(n+7){
+        display: none;
+    }
+}
